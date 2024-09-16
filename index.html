@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>高松道聡 - プロフィールページ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+        header {
+            background-image: url("./images/background.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 3.5vw;
+            margin: 0;
+            font-weight: 0;
+            text-shadow: 1px 1px 10px rgba(0, 0, 0, 1);
+        }
+        nav {
+            position: sticky;
+            top: 0;
+            background-color: #fff;
+            padding: 10px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+        nav a {
+            color: #333;
+            margin: 0 12px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.1em;
+            transition: color 0.2s ease;
+        }
+        nav a:hover {
+            color: #4A90E2;
+        }
+        section {
+            padding: 15px 30px;
+            max-width: 1000px;
+            margin: 50px auto;
+            background-color: #fff;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+            border-radius: 12px;
+        }
+        footer {
+            background-color: #4A90E2;
+            color: white;
+            text-align: center;
+            padding: 5px 0;
+        }
+        .section-title {
+            font-size: 28px;
+            margin-bottom: 15px;
+            position: relative;
+        }
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background-color: #4A90E2;
+            margin-top: 8px;
+            transition: width 0.2s ease;
+        }
+        .section-title:hover::after {
+            width: 120px;
+        }
+        .profile-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 20px;
+        }
+        .profile-container .profile-pic {
+            flex: 1;
+            text-align: center;
+        }
+        .profile-container .profile-pic img {
+            width: 240px;
+            height: 180px;
+            object-fit: cover;
+        }
+        .profile-container .profile-details {
+            flex: 2;
+        }
+        .profile-details ul {
+            list-style: none;
+            padding: 0;
+        }
+        .profile-details ul li {
+            margin-bottom: 10px;
+        }
+        .contact-card {
+            margin-top: 20px;
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .contact-card a {
+            color: #4A90E2;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+        .contact-card a:hover {
+            color: #333;
+        }
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5em;
+            }
+            nav a {
+                font-size: 1em;
+            }
+            .profile-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .profile-container .profile-pic,
+            .profile-container .profile-details {
+                flex: 1;
+                text-align: center;
+            }
+        }
+        /* 箇条書きの間隔を広げる */
+        li {
+            margin-bottom: 20px;
+        }        
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Takamatsu's portfolio</h1>
+    </header>
+
+    <nav>
+        <a href="#about">自己紹介</a>
+        <a href="#education">学歴</a>
+        <a href="#hobby">趣味</a>
+        <a href="#research">研究</a>
+        <a href="#contact">コンタクト</a>
+    </nav>
+
+    <section id="about">
+        <h2 class="section-title">自己紹介</h2>
+        <div class="profile-container">
+            <div class="profile-pic">
+                <img src="./images/mypicture.jpg" alt="プロフィール画像" style="object-fit: cover;">
+            </div>
+            <div class="profile-details">
+                <ul>
+                    <li>こんにちは！高松 道聡（たかまつ みちあき）です！</li>
+                    <li>大阪工業大学大学院 ロボティクス&デザイン工学研究科所属の修士1年です．</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2 class="section-title">学歴</h2>
+        <p><strong>2017年4月～2020年3月　私立 大阪学芸高等学校</strong> - 普通科</p>
+        <p><strong>2020年4月〜2024年3月　大阪工業大学</strong> - ロボティクス＆デザイン工学部 ロボット工学科</p>
+        <p><strong>2024年4月～2026年3月　大阪工業大学大学院</strong> - ロボティクス＆デザイン工学研究科 ロボティクス＆デザイン工学専攻（見込み）</p>
+    </section>   
+
+    <section id="hobby">
+        <h2 class="section-title">趣味</h2>
+        <li><strong>野球</strong> : 最近は高校野球に没頭していて，毎年春と夏はよく甲子園球場で観戦しています．プロ野球だとオリックスファンです．</li>
+        <li><strong>モノづくり</strong> : マイコンや3Dプリンタを用いたプロトタイプの作成や，プログラムを用いた自動化などをやっています．ソフト・ハード問わず手を動かしてものを作るのが好きです．ちなみにこのホームページも自作だったり．GitHubに色々あります．
+            <i class="fab fa-github"></i> 
+            <a href="https://github.com/takamatsu-1221" target="_blank">@takamatsu-1221</a></li>
+        <li><strong>食べること</strong> : ラーメン・焼肉が好きです．気分によってこってりの豚骨ラーメンの日もあれば，あっさり醤油ラーメンの日もあれば…</li>
+        <li><strong>ディズニーランド</strong> : 最近のマイブーム．でもジェットコースターは苦手です．</li>
+    </section>
+
+    <section id="research">
+        <h2 class="section-title">研究</h2>
+        <p><strong>内容</strong><br>
+        医療ロボティクス研究室（河合俊和先生）に所属して，耳科手術を支援するマニピュレータの開発を行っています．特にメカ設計に焦点を当てており，制約が多い中でどのようなロボットが最適か，試行錯誤の日々です．<br>
+        <p><strong>学会発表</strong><br>
+        2024年5月　ロボティクス・メカトロニクス講演会 @宇都宮<br>
+        2024年9月　日本ロボット学会学術講演会 @大阪</p>
+
+        <a href="https://medicalrobotics.ninja-web.net/" target="_blank">研究室HPはこちら</a></p>
+    
+        
+
+        
+    </section>
+
+    <section id="contact">
+        <h2 class="section-title">コンタクト</h2>
+        <div class="contact-card">
+            <p>Email : takamatsu20011221[at]gmail.com</p>
+            <p style="font-size: 13px; line-height: 0.5;">※ [at] を"@"に置き換えをお願いいたします</p>
+        </div>
+    </section>
+
+    
+
+    <footer>
+        <p>&copy; 2024 MICHIAKI Takamatsu</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
